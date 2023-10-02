@@ -30,6 +30,21 @@ hamburguer.addEventListener('click', () => {
     
 });
 
+// Evento de Scroll 
+document.querySelector('a[href="#sobre-gamer"]').addEventListener('click', (e) => {
+    e.preventDefault();
+    setTimeout(function() {
+        document.getElementById("sobre-gamer").scrollIntoView({behavior: 'smooth'});
+    }, 500)
+})
+
+document.querySelector('a[href="#personagens"]').addEventListener('click', (e) => {
+    e.preventDefault();
+    setTimeout(function () {
+        document.getElementById("personagens").scrollIntoView({behavior: 'smooth'});
+    }, 500)
+})
+
 // Evento que mostra mais o paragrafo 
 document.getElementById("verMais").addEventListener('click', () => {
     let verMais = document.getElementById("verMais");
