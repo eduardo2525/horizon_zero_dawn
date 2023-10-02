@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon zero dawn</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="build/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="imagens/horizon-zero-dawn-logo.jpg" alt="Logo do Horizon">
+            <nav>
+                <div class="navegacao">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input id="input" type="text" placeholder="Pesquisar">
+                </div>
+                <ul id="ul-animation">
+                    <li class="lista">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <a href="#sobre-gamer">Sobre o Gamer</a>
+                    </li>
+                    <li class="lista">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <a href="#personagens">Personagens</a>
+                    </li>
+                    <li class="lista">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <a href="#">Esperiencia</a>
+                    </li>
+                    <li class="lista">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <a href="#">Hardware</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="hamburguer">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouse-button" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouse-button" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouse-button" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouse-button" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagens/gmedia.playstation.com_is_image_SIEPDC_horizon-zero-dawn-hub-hero-banner-desktop-01-en-06sep21_$3200px$(Nest Hub).png" class="d-block w-100" alt="imagem do primeiro caroussel">
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/gmedia.playstation.com_is_image_SIEPDC_horizon-landing-hub-hero-banner-desktop-01-en-19aug21_$3200px$(Nest Hub).png" class="d-block w-100" alt="imagem do segundo caroussel">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Horizon Zero Dawn</h1>
+                <p>Horizon Zero Dawn é um jogo de ação e aventura que se passa em um mundo pós-apocalíptico onde os jogadores controlam Aloy, uma caçadora habilidosa, em busca de desvendar os segredos de máquinas gigantes e tribos humanas em um cenário deslumbrante.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/gmedia.playstation.com_is_image_SIEPDC_horizon-bva-hub-hero-banner-desktop-01-en-03mar22_$1600px$(Nest Hub).png" class="d-block w-100" alt="imagem do terceiro caroussel">
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/gmedia.playstation.com_is_image_SIEPDC_horizon-burning-shores-hub-hero-desktop-01-en-09mar23_$3200px$(Nest Hub).png" class="d-block w-100" alt="imagem do quarto caroussel">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <main>
+        <div class="container">
+            <img src="imagens/horizon-zero-dawn.jpg" alt="imagem horizon-zero-dawn-descrição">
+            <div id="sobre-gamer">
+                <h1>Sobre o Gamer</h1>
+                <p>
+                    Horizon Zero Dawn decorre num mundo pós-apocalíptico repleto de máquinas inspiradas em animais, umas mais ferozes do que outras. Aloy é a protagonista do jogo rejeitada pela tribo Nora (a tribo Nora consiste num grupo de caçadores ferozes que vivem nas montanhas e adoram a natureza, conhecida carinhosamente por eles como "All-Mother), é colocada sobre os cuidados de Rost, um outro exilado que se torna na sua figura paternal. Apesar de uma infância difícil, Aloy aprende a sobreviver no mundo e torna-se numa caçadora de máquinas bastante habilidosa, especialmente com a ajuda do seu Focus um pequeno dispositivo que lhe concede acesso a uma realidade aumentada, permitindo-lhe ver pontos fracos de máquinas e áreas ocultas do mundo.
+                </p>
+                <button id="verMais">Ver Mais</button>
+                <p id="verParagrafo">
+                    No entanto, o desejo de Aloy em perceber o seu passado torna-se cada vez mais intenso - e, para isso, ela terá de regressar à tribo que a expulsou inicialmente e participar num torneio chamado The Proving, que é realizado todos os anos. Após anos de treino, Aloy entra no The Proving, ansiosa para descobrir quem era a sua mãe. Infelizmente, as coisas não correm como esperado.
+                </p>
+                <ul id="list-mobal">
+                    <li>
+                        <img src="imagens/horizon zero dawn-1.jpg" alt="imagem do horizon-zero-dawn-1">
+                    </li>
+                    <li>
+                        <img src="imagens/horizon-zero-dawn-2.jpg" alt="imagem do horizon-zero-dawn-2">
+                    </li>
+                    <li>
+                        <img src="imagens/horizon zero dawn-3.jpg" alt="imagem do horizon-zero-dawn-3">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="personagens">
+            <div class="container">
+                <h1>Conheça os personagens</h1>
+                <div class="inicio">
+                    <h2>O início de uma lenda</h2>
+                    <p>
+                        Ignorada pela sua própria tribo desde que nasceu, Aloy nunca conheceu o carinho materno ou a aceitação da comunidade. Seu único companheiro era Rost, o recluso severo e impassível que a criou.
+                    </p>
+                    <p>
+                        Rost ensinou Aloy a sobreviver a qualquer dificuldade e a considerar o conforto como fraqueza, mas ele não conseguiu responder as perguntas que a incomodavam mais do que tudo: quem eram seus pais e por que ela foi expulsa da tribo.  
+                    </p>
+                </div>
+                <div class="personagens-gamer">
+                    <h2>Aliados e inimigos de Aloy</h2>
+                    <ul id="verifica-personagem">
+                        <li class="personagens">
+                            <a href="#verifica-personagem">ROST</a>
+                        </li>
+                        <li class="personagens">
+                            <a href="#verifica-personagem">VARL</a>
+                        </li>
+                        <li class="personagens">
+                            <a href="#verifica-personagem">AVAD</a>
+                        </li>
+                        <li class="personagens">
+                            <a href="#verifica-personagem">EREND</a>
+                        </li>
+                        <li class="personagens">
+                            <a href="#verifica-personagem">VANASHA</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="personagens-sobre">
+                    <figure>
+                        <img id="personagens-aparece" src="">
+                        <figcaption>
+                            <h3 id="sub-titulo"></h3>
+                            <p id="descricao">
+                                
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <div class="personagens-apareceu">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="source/script.js"></script>
+</body>
+</html>

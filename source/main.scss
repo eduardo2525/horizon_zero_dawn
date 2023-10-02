@@ -1,0 +1,383 @@
+$corBacgroundHeaser: rgba(209, 200, 200, 0.884);
+$corbacgroundMenu: rgb(255, 255, 255);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    .container {
+        width: 70vw;
+        margin: 0 auto;
+    }
+}
+header {
+    background-color: $corBacgroundHeaser;
+    width: 100%;
+    height: 15vh;
+
+    .container {
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly
+    }
+
+    .navegacao {
+        position: relative;
+
+        input {
+            padding: 10px;
+            width: 40vw;
+            border-radius: 30px;
+            border: 3px solid;
+
+            &::placeholder {
+                font-size: 20px;
+                padding: 0 20px;
+            }
+
+            &:focus {
+                border: none;
+                outline: rgb(5, 107, 107);
+            }
+        }
+
+        i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 25px;
+        }
+    }
+
+    img {
+        width: 15vw;
+        border-radius: 30px;
+    }
+
+    ul {
+        position: absolute;
+        z-index: 999;
+        top: 15vh;
+        left: 15vw;
+        width: 70vw;
+        background-color: $corbacgroundMenu;
+        list-style: none;
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        
+        li {
+            font-size: 10px;
+            transition: transform 0.5s ease;
+            position: relative;
+            left: -20px;
+            i {
+                font-size: 25px;
+                padding: 5px;
+                color: rgb(21, 121, 214);
+                
+                
+            }
+            
+            &:hover {
+                transform: translateX(10px);
+            }
+            
+            a {
+                text-decoration: none;
+                font-size: 30px;
+                color: rgb(27, 25, 25);
+            }
+        }
+    }
+
+        .hamburguer {
+        
+            i {
+                font-size: 40px;
+                cursor: pointer;
+            }
+        }
+    }
+
+main {
+    margin-top: 50px;
+    .container {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 50%;
+            height: 50%;
+            padding: 60px 20px;
+        }
+
+        #sobre-gamer {
+            
+            h1 {
+                text-align: center;
+            }
+            button {
+                position: relative;
+                left: 50%;
+                transform: translate(-50%);
+                border: 0;
+                font-size: 18px;
+                width: 150px;
+
+                &:hover {
+                    border-radius: 5px;
+                    color: rgb(14, 13, 13);
+                    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4) inset;
+                }
+            }
+            p {
+                font-size: 16px;
+            }
+            #verParagrafo{
+                display: none;
+            }
+
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li {
+                    list-style: none;
+
+                    img {
+                        width: 200px;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+    #personagens {
+        width: 100%;
+        height: 800px;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(172, 153, 153)), url('../imagens/Aloy-image.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1 {
+                color: rgb(255, 255, 255);
+                margin: 50px;
+                font-size: 50px;
+            }
+
+            .inicio {
+                h2 {
+                    color: rgb(29, 28, 28);
+                    font-size: 40px;
+                }
+                p {
+                    color: rgb(253, 253, 253);
+                    font-size: 20px;
+                }
+            }
+
+            .personagens-gamer {
+
+                h2 {
+                    width: 400px;
+                    text-align: center;
+                }
+
+                ul {
+                    position: absolute;
+                    width: 400px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    background: white;
+                    border-radius: 15px;
+                    box-shadow: 10px px 9px rgba(0, 0, 0, 0.4) ;
+
+                    li {
+                        position: relative;
+                        left: -15px;
+                        list-style: none;
+                        font-size: 20px;
+                        padding: 5px 5px;
+
+                        a {
+                            text-decoration: none;
+                            color: rgb(0, 0, 0);
+
+                        }
+                    }
+                }
+            }
+            .personagens-sobre {
+                margin-top: 40px;
+                display: flex;
+                width: 100%;
+                figure {
+                    display: flex;
+                    width: 60%;
+                    img {
+                        width: 50%;
+                        height: 90%;
+                        cursor: pointer;
+                    }
+                    figcaption {
+                    position: relative;
+                    top: 50px;
+                    font-size: 22px;
+                    }
+                }
+                .personagens-apareceu {
+                    width: 40%;
+                    img {
+                        width: 500px;
+                        height: 400px;
+                        
+                    }
+                }
+
+                .selecionado {
+                    background: blue;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+    @media screen and (max-width: 767px) {
+        
+        header {
+            .container {
+                width: 100%;
+            }
+            
+            img {
+                width: 30vw;
+                border-radius: 30px;
+            }
+            nav {
+                .navegacao {
+                    i {
+                        width: 5vw;
+                    }
+                }
+                #ul-animation {
+                    display: none;
+                    flex-direction: column;
+                    width: 40vw;
+                    position: absolute;
+                    left: -15px;
+                    
+                    li {
+                        width: 100px;
+                        position: relative;
+                        left: 0;
+                        i {
+                            font-size: 15px;
+                        }
+                        a {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        main {
+            .container {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                display: inline;
+                img {
+                    width: 95%;
+                    padding: 0;
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                #sobre-gamer {
+                    h1 {
+                        font-size: 32px;
+                    }
+                    p {
+                        text-align: center;
+                    }
+                }
+                #list-mobal {
+                    width: 100%;
+                    position: relative;
+                    left: -10px;
+                    li {
+                        img {
+                            max-width: 110%;
+                        }
+                    }
+                }
+            }
+            #personagens {
+                width: 100%;
+                height: 100%;
+                .container {
+                    h1 {
+                        font-size: 30px;
+                        margin: 0;
+                    }
+                    .inicio {
+                        h2 {
+                            text-align: center;
+                        }
+                        p {
+                            text-align: center;
+                        }
+                    }
+                    .personagens-gamer {
+                        width: 100%;
+                        h2 {
+                            width: 100%;
+                        }
+                        ul {
+                            width: 90%;
+                            position: relative;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                    .personagens-sobre {
+                        margin: 0;
+                        figure {
+                            margin: 0;
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            figcaption {
+                                margin: 0;
+                                padding: 0;
+                                h3 {
+                                    position: relative;
+                                    top: -30px;
+                                    text-align: center;
+                                }
+                                p {
+                                    position: relative;
+                                    top: -30px;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+                    .personagens-apareceu {
+                        display: none;
+                    }
+                }
+            }
+        }
+}
