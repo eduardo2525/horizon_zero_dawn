@@ -321,5 +321,115 @@ main #personagens .container .personagens-sobre .selecionado {
     display: none;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header .container {
+    width: 100%;
+  }
+  header img {
+    width: 35vw;
+    border-radius: 30px;
+  }
+  header nav .navegacao i {
+    width: 5vw;
+  }
+  header nav ul {
+    position: absolute;
+    z-index: 999;
+    top: 15vh;
+    left: 0;
+    width: 100vw;
+    display: none;
+  }
+  header nav ul li i {
+    font-size: 25px;
+  }
+  header nav ul li a {
+    font-size: 25px;
+  }
+  main .container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: inline;
+  }
+  main .container img {
+    width: 95%;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  main .container #sobre-gamer h1 {
+    font-size: 32px;
+  }
+  main .container #sobre-gamer p {
+    text-align: center;
+  }
+  main .container #list-mobal {
+    width: 100%;
+    position: relative;
+    left: -10px;
+  }
+  main .container #list-mobal li img {
+    max-width: 110%;
+  }
+  main #personagens {
+    width: 100%;
+    height: 100%;
+  }
+  main #personagens .container {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  main #personagens .container h1 {
+    font-size: 30px;
+    margin: 0;
+  }
+  main #personagens .container .inicio h2 {
+    text-align: center;
+  }
+  main #personagens .container .inicio p {
+    text-align: center;
+  }
+  main #personagens .container .personagens-gamer {
+    width: 70%;
+  }
+  main #personagens .container .personagens-gamer h2 {
+    width: 100%;
+  }
+  main #personagens .container .personagens-gamer ul {
+    width: 90%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  main #personagens .container .personagens-sobre {
+    margin: 0;
+  }
+  main #personagens .container .personagens-sobre figure {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  main #personagens .container .personagens-sobre figure figcaption {
+    margin: 0;
+    padding: 0;
+  }
+  main #personagens .container .personagens-sobre figure figcaption h3 {
+    position: relative;
+    top: -30px;
+    text-align: center;
+  }
+  main #personagens .container .personagens-sobre figure figcaption p {
+    position: relative;
+    top: -30px;
+    text-align: center;
+  }
+  main #personagens .container .personagens-apareceu {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
