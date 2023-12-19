@@ -8,6 +8,19 @@ body .container {
   width: 70vw;
   margin: 0 auto;
 }
+body #progresso {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: rgba(209, 200, 200, 0.884);
+}
+body #progresso #barra-progresso {
+  height: 100%;
+  background-color: #1834d6;
+  width: 0;
+}
 
 header {
   background-color: rgba(209, 200, 200, 0.884);

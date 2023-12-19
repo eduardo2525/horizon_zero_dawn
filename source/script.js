@@ -1,6 +1,7 @@
 const input = document.getElementById("input");
 const hamburguer = document.querySelector(".hamburguer");
 const personagens = document.querySelectorAll(".personagens");
+const progresso = document.querySelector('.progresso');
 
 // Evento que tira o icon de dentro da Barra de Pesquisa
 document.addEventListener('click', (e) => {
@@ -44,6 +45,24 @@ document.querySelector('a[href="#personagens"]').addEventListener('click', (e) =
         document.getElementById("personagens").scrollIntoView({behavior: 'smooth'});
     }, 500)
 })
+
+function barraRolagem() {
+    const scrollTop = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const fullHeight = document.body.clientHeight;
+
+    const scrollPercentage = (scrollTop / (fullHeight - windowHeight)) * 100;
+
+    // Exibir a barra de progresso
+    const progresso = document.getElementById('progresso');
+    progresso.style.display = 'block';
+
+    // Atualizar o valor da barra de progresso
+    const barraProgresso = document.getElementById('barra-progresso');
+    barraProgresso.style.width = `${scrollPercentage}%`;
+}
+
+window.addEventListener('scroll', barraRolagem);
 
 // Evento que mostra mais o paragrafo 
 document.getElementById("verMais").addEventListener('click', () => {
